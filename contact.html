@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Bootleg Customization -->
     <link href="./css/bootleg_bulma.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+    <!-- BootstrapValidator JS -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
 </head>
 
 <body class="site">
@@ -53,26 +58,27 @@
     </nav>
 
     <div class="container contact_form_container">
+        <label>Contact Bootleg Bar-B-Q</label>
+          <div class="contact_form_content">
+            <p>Got a question, comment, or just want to say howdy? Give us a holler or shoot us an email!</p>
+            <p>For pickup orders and general questions, call Bootleg's restaurant direct at:&nbsp;
+            <a href="tel:5022392722"><strong>502-239-2722</strong></a></p>
+            <p>For the catering department, please call:&nbsp;<a href="tel:5022392778"><strong>502-239-2778</strong></a></p>
+            <p>Need more information about our services? &nbsp;Couldn't find what you were looking for on our site? Do you have general feedback that you would like to get to our managers? Please fill out the form below and someone will get back in touch with you.&nbsp;When you are finished, click the ‘Submit’ button to send us your message. You will see a confirmation below.&nbsp; Alternatively, please feel free to email us directly at <a target="_self" href="mailto:bootleg.catering@gmail.com">bootleg.catering@gmail.com</a>.</p>
+            <p>Please note, this form is<em> <strong>not</strong></em> intended to fulfill order requests. &nbsp;If you are trying to submit a request for a catering delivery or a pickup order, call one of the contact numbers listed above to ensure your order is received.</p>
+          </div>
+          <hr>
         <label class="label">Name</label>
         <p class="control">
-          <input class="input" type="text" placeholder="Text input">
+          <input class="input" type="text" placeholder="First and last name, please.">
         </p>
         <label class="label">Email</label>
         <p class="control has-icon has-icon-right">
-          <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
-          <span class="icon is-small">
-            <i class="fa fa-warning"></i>
-          </span>
-          <span class="help is-danger">This email is invalid</span>
+          <input class="input" type="text" placeholder="Email input">
         </p>
         <label class="label">Subject</label>
         <p class="control">
-          <span class="select">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
-          </span>
+          <input class="input" type="text" placeholder="Your Subject">
         </p>
         <label class="label">Message</label>
         <p class="control">
@@ -81,10 +87,10 @@
 
         <div class="control is-grouped">
           <p class="control">
-            <button class="button is-warning">Submit</button>
+            <button class="button">Submit</button>
           </p>
           <p class="control">
-            <button class="button is-link">Cancel</button>
+            <button class="button">Cancel</button>
           </p>
         </div>
       </div>
