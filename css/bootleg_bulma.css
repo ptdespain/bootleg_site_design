@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "showguide";
+  src: url("../fonts/showguide.ttf");
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: black;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+  font-family: 'Bitter', serif;
+  background-color: black;
+  background-image: url("../images/backgrounds/louisville ky best bbq restaurant Bootleg Barbecue.jpg");
+  background-size: cover;
+}
+
+h3 {
+  font-family: "showguide", sans-serif;
+}
+
+h3,
+h4,
+h6 {
+	text-shadow: 1px 1px 5px black;
+}
+
+.navBar {
+	background-color: rgba(0,0,0,0.15);
+	font-weight: bold;
+	position: fixed;
+	min-width: 100%;
+ 	text-transform: uppercase;
+ 	color: #FFCE33;
+ 	z-index: 995;
+}
+
+/* navigation content wrapper */
+
+/* hidden checkbox */
+#menu-toggle {
+  display: none;
+}
+  
+.label-toggle {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 2%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* navigation full & mobile */
+
+nav ul {
+  display: flex;
+  z-index: 1000;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 95%;
+  line-height: 1.5em;
+}
+
+nav a {
+  color: #FFCE33;
+  text-shadow: 1px 1px 5px black;
+  text-decoration: none;
+  transition: all .3s;
+  padding-right: 3em;
+  z-index: 1005;
+}
+
+nav a:hover {
+  color: white;
+}
+
+li {
+  display: inline-block;
+}
+
+/* main "site-content" */
+
+.section {
+  display: flex;
+  background-color: transparent;
+  padding-top: 2em;
+}
+
+/* logo box (on welcome page) */
+.logo-box {
+	background-color: rgba(0,0,0, 0.5);
+	padding: 20px;
+	border-radius: 2%;
+}
+
+.logo-box > img {
+	display: block;
+	margin: auto;
+	max-width: 65%;
+	height: auto;
+}
+
+/* logo level (on other pages) */
+
+.logo-level {
+	background-color: transparent;
+	padding-top: 3em;
+}
+
+.logo-level > img {
+	max-width: 20%;
+	height: auto;
+}
+
+.column {
+	vertical-align: center;
+}
+
+.card {
+  color: #ff6e00;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.card-content {
+  margin: 2px; 
+}
+
+.card-content a {
+	color: #FFCE33;
+}
+
+.card-content > h3, h4, h6 {
+  color: #ff6e00;
+  background-color: transparent;
+	border-radius: 2%;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+}
+
+.footer p {
+	color: #FFCE33;
+  font-family: 'Bitter', serif;
+}
+
+.favicons-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.favicons-box img {
+	max-width: 70%;
+	height: auto;
+}
+
+/* IMG Captions styling */
+
+.caption {
+  font-size: small;
+  text-align: center;
+}
+
+/* ABOUT Page Styling */
+#about_columns {
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 2%;
+}
+
+#about_col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.locations {
+  padding: 15px;
+}
+
+/* Store Menu Page Styling */
+.menu_widget {
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 2%;
+  padding: 5px;
+}
+
+.locu-widget-wrapper #locu-render-output .locu-nav li {
+  font-family: 'Bitter', serif;
+  font-size: 22px
+}
+
+.locu-widget-wrapper #locu-render-output .locu-nav li:hover {
+  color: white;
+}
+
+.locu-menu-item-name,
+.locu-note {
+  font-weight: normal;
+  font-family: 'Bitter', serif;
+  color: #FFCE33;
+}
+
+.locu-menu-item-description,
+.locu-menu-item-price {
+  font-weight: normal;
+  font-family: 'Bitter', serif;
+  color: #ff6e00;
+}
+
+/* Contact Page Styling */
+
+.contact_form_container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width:450px) {
+
+.locations p a {
+  font-size: 15px;
+}
+
+}
+
+@media screen and (max-width:605px) {
+
+  /* change navigation on mobile */
+
+  nav ul {
+    background-color: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s;
+    width: 100%;
+    visibility: hidden;
+  }
+
+  li {
+    color: #FFCE33;
+    padding: 1em 0;
+  }
+
+  nav a:hover {
+  	color: white;
+  }
+
+  /* checkbox visible */
+  #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 80vh;
+    visibility: visible;
+    z-index: 998;
+  }
+
+  .label-toggle {
+    background: linear-gradient(to bottom, #FFCE33 0%, #FFCE33 20%, transparent 20%, transparent 40%, #FFCE33 40%, #FFCE33 60%, transparent 60%, transparent 80%, #FFCE33 80%, #FFCE33 100%); //Gradient Hamburger
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+
+  .wrapper {
+  	display: block;
+  }
+
+  .logo-level > img {
+    max-width: 30%;
+    height: auto;
+  }	
+
+}
+
+
+@media screen and (max-width:770px) {
+
+/* flip columns on mobile */
+
+.mobile-order {
+  display: flex;
+  z-index: 1;
+  flex-flow: column;
+}
+  .mobile-order .fl-2 {
+  order: 1;
+}
+  .mobile-order .fl-1 {
+  order: 2;
+}
+  .mobile-order .fl-3 {
+  order: 3;
+}
+
+}
+
+/* font resize */
+
+.site-content {
+  font-size: large;
+}
+
+@media screen and (min-width:1000px) {
+
+.favicons-box img {
+  max-width: 50%;
+  height: auto;
+}
