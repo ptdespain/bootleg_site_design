@@ -26,6 +26,10 @@ body {
   background-size: cover;
 }
 
+.container a {
+  color: #ff6e00;
+}
+
 h3 {
   font-family: "showguide", sans-serif;
 }
@@ -152,6 +156,24 @@ li {
 	border-radius: 2%;
 }
 
+/* locations section styling*/
+
+#locations {
+  padding-top: 1.5em;
+  color: #ff6e00;
+  font-family: 'Bitter', serif;
+}
+
+#locations a {
+  color: #FFCE33;
+  font-size: small;
+  font-family: 'Bitter', serif;
+}
+
+#locations a:hover {
+  color: white;
+}
+
 /* footer */
 .footer {
   background-color: black;
@@ -179,6 +201,8 @@ li {
   text-align: center;
 }
 
+/* Start sub-page page styling */
+
 /* ABOUT Page Styling */
 #about_columns {
   background-color: rgba(0,0,0, 0.5);
@@ -191,42 +215,74 @@ li {
   justify-content: space-around;
 }
 
-.locations {
-  padding: 15px;
-}
-
 /* MENU Page Styling */
-.added {
-    background : green;
+.mc_wrap {
+  display: flex;
+  justify-content: space-around;
 }
 
-.menu_widget {
+.menu_container {
+  max-width: 90%;
   background-color: rgba(0,0,0, 0.5);
   border-radius: 2%;
-  padding: 5px;
+  padding: 2%;
 }
 
-.locu-widget-wrapper #locu-render-output .locu-nav li {
-  font-family: 'Bitter', serif;
-  font-size: 22px
+#tabs > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.locu-widget-wrapper #locu-render-output .locu-nav li:hover {
+#tabs > ul > li > a {
+  font-family: 'showguide', sans-serif;
+  font-size: 1.5em;
+  color: #ff6e00;
+}
+
+#tabs > ul > li > a:hover {
+  font-family: 'showguide', sans-serif;
+  font-size: 1.5em;
   color: white;
 }
 
-.locu-menu-item-name,
-.locu-note {
-  font-weight: normal;
-  font-family: 'Bitter', serif;
+#tabs > ul > li > a:focus {
+  font-family: 'showguide', sans-serif;
+  font-size: 1.5em;
   color: #FFCE33;
 }
 
-.locu-menu-item-description,
-.locu-menu-item-price {
-  font-weight: normal;
-  font-family: 'Bitter', serif;
+.tab_content {
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 2%;
+  padding: 1%;
+}
+
+.menu_tab_heading {
+  font-size: larger;
+  color: #FFCE33;
+}
+
+.menu_tab_heading,
+.menu_item,
+.menu_pricing,
+.menu_item_description {
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu_item {
   color: #ff6e00;
+}
+
+.menu_pricing {
+  font-size: small;
+  color: #FFCE33;
+}
+
+.menu_item_description {
+  font-size: x-small;
+  color: white;
 }
 
 /* CONTACT Page Styling */
@@ -271,8 +327,15 @@ li {
 
 @media screen and (max-width:450px) {
 
-.locations p a {
-  font-size: 15px;
+/* locations section re-styling*/
+
+#locations {
+  color: #ff6e00;
+  font-family: 'Bitter', serif;
+  font-size: small;
+}
+#locations a {
+  font-size: x-small;
 }
 
 }
@@ -361,6 +424,10 @@ li {
 }
 
 @media screen and (min-width:1000px) {
+
+.tab_content {
+  min-width: 1000px;
+}
 
 .favicons-box img {
   max-width: 50%;

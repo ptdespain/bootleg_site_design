@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,9 +15,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Bootleg Customization -->
     <link href="./css/bootleg_bulma.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
 </head>
 
 <body class="site">
@@ -54,36 +58,114 @@
     </nav>
 
 <!-- Menu Section -->
+<div class="mc_wrap">
+  <div class="menu_container">
+    <div id="tabs">
+      <ul>
+        <li><a href="#fragment-1"><span>Sandwiches & Sandwich Plates‏</span></a></li>
+        <li><a href="#fragment-2"><span>Dinners‏ & Family Paks</span></a></li>
+        <li><a href="#fragment-3"><span>Sides‏ & Other Fixin's</span></a></li>
+        <li><a href="#fragment-4"><span>A La Carte / Bulk Meats</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="#fragment-5"><span>Desserts & Drinks</span></a></li>
+        <li><a href="#fragment-6"><span>Signature Sauces</span></a></li>
+      </ul>
+      <div class="tab_content">
+        <div id="fragment-1">
+        <p class="menu_tab_heading">Sandwiches & Sandwich Plates‏:</p>
+          <div class="columns">
+            <div class="column is-one-third-tablet is-one-quarter-desktop has-text-centered">
+              <p class="menu_item">Pulled Pork</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+              <p class="menu_item">Beef Brisket</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+            </div>
+            <div class="column has-text-centered">
+              <p class="menu_item">Chopped Chicken</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+              <p class="menu_item">Rib Tips</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+            </div>
+            <div class="column has-text-centered">
+              <p class="menu_item">Bar-B-Q Turkey</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+              <p class="menu_item">Pulled Mutton</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+            </div>
+            <div class="column has-text-centered">
+              <p class="menu_item">Cajun Smoked Ham</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+              <p class="menu_item">Double-Smoked Ham</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+            </div>
+          </div>
 
-<a class="add" href="#">Add</a>
-<div id="spin">#SPIN</div>
+          <div class="columns">
+            <div class="column is-half is-offset-one-quarter has-text-centered">
+              <p class="menu_item">Double-Smoked Ham Salad</p><p class="menu_pricing">Sandwich $3.99</p>
+            </div>
+          </div>
 
-<!-- COMMENTING OUT LOCU MENU!!
-    <section class="section is-large">
-      <div class="container menu_widget">
-        <script id="-locu-widget" type="text/javascript" src="https://widget.locu.com/widget2/locu.widget.v2.0.js?id=3f864a3157fd054e3690&medium=web"></script>
-      </div>
-    </section>
--->
+          <div class="columns">
+            <div class="column is-half has-text-centered">
+              <p class="menu_item">The "Big Nasty"</p><p class="menu_item_description">Made with sauceless sliced beef brisket (may substitute pork or chicken upon request), our tangy White Sauce, green peppers, onions, and cheese.</p><p class="menu_pricing">Sandwich $5.29 | Plate $8.49</p>
+              <p class="menu_item">Jumbo Pit-Smoked Pork Chop</p><p class="menu_item_description">Our new pit-smoked chop is a "pound-plus" of country-style flavor that will satisfy the heartiest of appetites.</p><p class="menu_pricing">Sandwich $6.49</p>
+              <p class="menu_item">Lil' Bootlegger</p><p class="menu_item_description">A quarter-pound, pit-smoked all-beef dog- the "Hoss" runs them little dogs off the block!</p><p class="menu_pricing">Sandwich $4.29 | Plate $7.49</p>
+            </div>
+            <div class="column has-text-centered">
+              <p class="menu_item">"Hoss" Smoked Hot Dog</p><p class="menu_item_description">A lighter version of our original sandwich. Your choice of pulled BBQ and any of Bootleg's made-from-scratch sauces.</p><p class="menu_pricing">$2.79</p>
+              <p class="menu_item">"Big Pig" Smoked Brat</p><p class="menu_item_description">Our definition of a "Boss Hog," this plump quarter-pound bratwurst is hickory-smoked to perfection... SOO-WEE!</p><p class="menu_pricing">Sandwich $2.79</p>
+              <p class="menu_item">Spicy Andouille Sausage</p><p class="menu_item_description">Seasoned, smoked (twice) and served to our specifications, this spicy quarter-pound Andouille sausage isn't shy about bringing a little heat!</p><p class="menu_pricing">Sandwich $2.79</p>
+            </div>
+          </div>
 
-   <!-- Locations Info Level -->
-    <nav class="level">
-        <div class="level-item has-text-centered">
-        <div class="locations">
-          <h3 class="title"><a href="#">Restaurant:</a></h3>
-          <p class="title"><a href="tel:5022392722">502-239-2722</a></p>
-          <p class="title"><a href="https://goo.gl/maps/DiYvBNFHcY52">9704 Old Bardstown Rd</a></p>
-        </div>
+          <div class="columns">
+            <div class="column is-half is-offset-one-quarter has-text-centered">
+              <p class="menu_item">Bootleg Kid's Meal</p><p class="menu_item_description">Quarter-pound hot dog or chicken leg, served with chips, cookies, and a drink.</p><p class="menu_pricing">$3.99</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="level-item has-text-centered">
-        <div class="locations">
-          <h3 class="title"><a href="/louisville-ky-best-catering">Catering Office:</a></h3>
-          <p class="title"><a href="tel:5022392778">502-239-2778</a></p>
-          <p class="title"><a href="mailto:bootleg.catering@gmail.com">bootleg.catering@gmail.com</a></p>
+        <div id="fragment-2">
+          <p class="menu_tab_heading">Dinners:</p>
+            <div class="columns">
+              <div class="column is-one-third has-text-centered">
+                <p class="menu_item">Smoked Half Chicken Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces. (All white meat available upon request for an additional charge).</p><p class="menu_pricing">$8.99 | $10.49 (All White)</p>
+                <p class="menu_item">Smoked Quarter Chicken Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces. (All white meat available upon request for an additional charge).</p><p class="menu_pricing">$6.49 | $7.24 (All White)</p>
+              </div>
+              <div class="column has-text-centered">
+                <p class="menu_item">Half Slab Rib Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces.</p><p class="menu_pricing">$13.99</p>
+                <p class="menu_item">Half Slab Baby Back Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces.</p><p class="menu_pricing">$13.99</p>
+                <p class="menu_item">Riblet Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces.</p><p class="menu_pricing">$8.49</p>
+              </div>
+              <div class="column has-text-centered">
+                <p class="menu_item">Jumbo Pit-Smoked Pork Chop Dinner</p><p class="menu_item_description">Includes two side orders (or a baked potato), roll, and your choice of Bootleg's original made-from-scratch sauces.</p><p class="menu_pricing">$9.69</p>
+                <p class="menu_item">Smoked Sausage & Red Bean Meal</p><p class="menu_item_description">Our New Orleans-style red beans and a spicy double-smoked Andouille sausage, served on a bed of seasoned rice and topped with our original spicy creole sauce.</p><p class="menu_pricing">$6.49</p>
+              </div>
+            </div>
+
         </div>
+
+        <div id="fragment-3">
+          <p class="menu_tab_heading">Sides:</p>
+            <div class="columns">
+              <div class="column is-one-third has-text-centered">
+                <p class="menu_item">...</p>
+              </div>
+            </div>
         </div>
-    </nav>
+    <script>
+    $( "#tabs" ).tabs();
+    </script>
+
+   <!-- Locations Columns -->
+<div class="columns is-mobile" id="locations">
+  <div class="column has-text-centered">
+    <p>Restaurant:</p>
+    <p><a href="tel:5022392722">502-239-2722</a></p>
+    <p><a href="https://goo.gl/maps/DiYvBNFHcY52">9704 Old Bardstown Rd</a></p>
+  </div>
+
+  <div class="column has-text-centered">
+    <p>Catering Office:</p>
+    <p><a href="tel:5022392778">502-239-2778</a></p>
+    <p><a href="mailto:bootleg.catering@gmail.com">bootleg.catering@gmail.com</a></p>
+  </div>
+</div>
   </main>
   
  <!-- Footer / Favicons / Copyright -->
@@ -101,7 +183,5 @@
       </div>
     </div>
     </footer>
-
-<script src="./js/btr-menu.js"></script>
 </body>
 </html>
