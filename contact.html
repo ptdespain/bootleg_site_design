@@ -22,6 +22,7 @@
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
     <!-- BootstrapValidator JS -->
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+
 </head>
 
 <body class="site">
@@ -68,30 +69,32 @@
             <p>Please note, this form is<em> <strong>not</strong></em> intended to fulfill order requests. &nbsp;If you are trying to submit a request for a catering delivery or a pickup order, call one of the contact numbers listed above to ensure your order is received.</p>
           </div>
           <hr>
-        <label class="label">Name</label>
-        <p class="control">
-          <input class="input" type="text" placeholder="First and last name, please.">
-        </p>
-        <label class="label">Email</label>
-        <p class="control has-icon has-icon-right">
-          <input class="input" type="text" placeholder="Email input">
-        </p>
-        <label class="label">Subject</label>
-        <p class="control">
-          <input class="input" type="text" placeholder="Your Subject">
-        </p>
-        <label class="label">Message</label>
-        <p class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
-        </p>
-
-        <div class="control is-grouped">
-          <p class="control">
-            <button class="button">Submit</button>
-          </p>
-          <p class="control">
-            <button class="button">Cancel</button>
-          </p>
+        <form id="foo">
+          <label class="label">Name</label>
+            <p class="control">
+              <input class="input" id="name" name="name" type="text" placeholder="First and last name, please.">
+            </p>
+          <label class="label">Email Address</label>
+            <p class="control has-icon has-icon-right">
+              <input class="input" id="email" name="email" type="email" placeholder="Email input">
+            </p>
+          <label class="label">Subject</label>
+            <p class="control">
+              <input class="input" id='subject' name='subject' type="text" placeholder="Your Subject">
+            </p>
+          <label class="label">Message</label>
+            <p class="control">
+              <textarea class="textarea" id='message' name='message' rows='5' placeholder="Textarea"></textarea>
+            </p>
+          <div id='success'></div>
+          <div class="control is-grouped">
+            <p class="control">
+              <button class="button" type="submit">Submit</button>
+            </p>
+            <p class="control">
+              <button class="button">Cancel</button>
+            </p>
+        </form>
         </div>
       </div>
     </div>
@@ -144,5 +147,10 @@ Please fill out the following form to request information about our products and
       </div>
     </div>
     </footer>
+
+    <!-- Form Content Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src='./js/google-sheet.js'></script>
 </body>
 </html>
