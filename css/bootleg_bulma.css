@@ -325,6 +325,23 @@ li {
   border-color: black;
 }
 
+/* Modal Styling */
+
+.modal-card-head,
+.modal-card-foot {
+  background-color: #FFCE33;
+}
+
+.modal-card-body {
+  background-color: rgba(0,0,0, 0.5);
+  color: #ff6e00;
+}
+
+span .button {
+  background-color: black;
+  color: #ff6e00;
+}
+
 @media screen and (max-width:450px) {
 
 /* locations section re-styling*/
